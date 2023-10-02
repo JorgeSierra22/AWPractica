@@ -5,15 +5,16 @@ body{
 header{
     width: 80%;
     background-color: red;
-    position:fixed;
+    /* position:fixed; */
     left:10%;
-    top: 2%;
+    top: 0%;
 }
 
 .menu{
     width: 100%;
     background: #3D6981;
      margin:auto;
+     position:fixed;
     
 }
 
@@ -47,6 +48,7 @@ header{
     padding: 0;
     display: flex;
     flex-direction:row;
+    
 }
 
 .menu li a{
@@ -55,6 +57,36 @@ header{
     text-decoration: none;
     padding: 15px 20px;
     display: block;
+}
+.listaDestinos{
+     display:grid;
+    grid-template-columns:repeat(
+        auto-fit,
+        minmax(
+            200px,
+            1fr
+        )
+        
+       
+    ) ;
+    gap: 20px;
+    
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    
+    
+}
+.listaDestinos li{
+    flex: 1; /* Hace que los elementos se expandan igualmente dentro del contenedor */
+  margin: 5px; /* Ajusta el margen entre los elementos */
+}
+.listaDestinos img{
+    width: 100%; /* Ajusta la anchura de la imagen al 100% del contenedor */
+  height: 100%; /* Mantiene la proporción original de la imagen */
+  border: 1px solid #ddd;
 }
 
 
