@@ -1,0 +1,53 @@
+body{
+    background-size: 100%;
+    font-family: sans-serif;
+}
+header{
+    width: 80%;
+    background: #3D6981;
+    margin:auto;
+}
+
+/* Raton encima boton desplegar informacion */
+.logo{
+    padding: 0px 10px;
+    float: left;
+}
+.info{
+    float:right;
+    margin: auto;
+}
+.menu li a:hover{
+    background-color: #85c3dd;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    min-height: 140px;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction:row;
+}
+
+.menu li a{
+    color: #fff;
+    background-color: #3D6981;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.fondo{
+    width: 100%;
+    margin:0px 10%;
+}
