@@ -1,0 +1,74 @@
+body{
+    background-size: 100%;
+    font-family: sans-serif;
+}
+header{
+    width: 80%;
+    background-color: red;
+    position:fixed;
+    left:10%;
+    top: 2%;
+}
+
+.menu{
+    width: 100%;
+    background: #3D6981;
+     margin:auto;
+    
+}
+
+.lista{
+    margin-top: 10px;
+    background: #ebb852;  
+    width: 100%;
+    height: 10%;
+    float: right;
+}
+.menu > li{
+    float: left;
+}
+
+.menu li a:hover{
+    background-color: #85c3dd;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    min-height: 140px;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction:row;
+}
+
+.menu li a{
+    color: #fff;
+    background-color: #3D6981;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+
+/* .menu ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none; /* Quitar los puntos en las listas 
+    display: flex;  Poner en horizontal el menu 
+} */
+
+/* .menu li a{
+    color: #fff;
+    background-color: #3D6981;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+} */
