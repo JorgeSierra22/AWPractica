@@ -3,42 +3,27 @@ body{
     font-family: sans-serif;
 }
 header{
-    width: 80%;
-    background-color: red;
-    /* position:fixed; */
-    left:10%;
-    top: 0%;
+    width:90%;
+    margin: 0% 5%;
+    background: #3D6981; 
+    /*position:fixed; 
+    left:10%;                 // Esto lo modificamos al final
+    top: 0%; */ 
 }
 
-.menu{
-    width: 100%;
-    background: #3D6981;
-     margin:auto;
-     position:fixed;
-    
-}
 
-.lista{
-    margin-top: 10px;
-    background: #ebb852;  
-    width: 100%;
-    height: 10%;
-    float: right;
-}
+/* Menu */
 .menu > li{
     float: left;
 }
-
 .menu li a:hover{
     background-color: #85c3dd;
 }
-
 .menu li ul {
     display: none;
     position: absolute;
     min-height: 140px;
 }
-
 .menu li:hover > ul{
     display: block;
 }
@@ -50,7 +35,6 @@ header{
     flex-direction:row;
     
 }
-
 .menu li a{
     color: #fff;
     background-color: #3D6981;
@@ -58,6 +42,50 @@ header{
     padding: 15px 20px;
     display: block;
 }
+
+/* Foto inicio */
+.fotoInicio{
+    margin-top: 10px;
+    background-color: #85c3dd;
+    background-image: url("Imagenes/avion.webp");
+    width: 90%;
+    padding: 15% 0%;
+    margin: auto;
+}
+
+/* Agencia texto */
+.texto{
+    text-align: center;
+    color: #3D6981;
+}
+
+/* Los viajes disponibles */
+.viajes{
+    margin-top: 10px;
+    background-color: #85c3dd;
+    width: 80%;
+    padding: 20% 0%;
+    margin: auto;
+}
+
+/*viaje1*/
+.viaje1{
+    width: 29%;
+    padding: 2% 0%;
+   
+    background-color: #ebb852;
+}
+
+.lista{
+    margin-top: 10px;
+    background: #ebb852;  
+    width: 100%;
+    height: 10%;
+    float: right;
+}
+
+
+
 .listaDestinos{
      display:grid;
     grid-template-columns:repeat(
@@ -75,9 +103,7 @@ header{
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
-    
-    
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */    
 }
 .listaDestinos li{
     flex: 1; /* Hace que los elementos se expandan igualmente dentro del contenedor */
@@ -88,19 +114,3 @@ header{
   height: 100%; /* Mantiene la proporción original de la imagen */
   border: 1px solid #ddd;
 }
-
-
-/* .menu ul {
-    margin: 0;
-    padding: 0px;
-    list-style: none; /* Quitar los puntos en las listas 
-    display: flex;  Poner en horizontal el menu 
-} */
-
-/* .menu li a{
-    color: #fff;
-    background-color: #3D6981;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-} */
