@@ -16,16 +16,10 @@ header{
 .menu > li{
     float: left;
 }
-.menu li a:hover{
-    background-color: #85c3dd;
-}
 .menu li ul {
     display: none;
     position: absolute;
     min-height: 140px;
-}
-.menu li:hover > ul{
-    display: block;
 }
 .menu ul {
     margin: 0;
@@ -33,13 +27,19 @@ header{
     padding: 0;
     display: flex;
     flex-direction:row;
-    
 }
 .menu li a{
     color: #fff;
     background-color: #3D6981;
     text-decoration: none;
     padding: 15px 20px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: #85c3dd;
+}
+.menu li:hover > ul{
     display: block;
 }
 
@@ -63,16 +63,41 @@ header{
 .viajes{
     margin-top: 10px;
     background-color: #85c3dd;
+    padding: 15%;
     width: 80%;
-    padding: 20% 0%;
     margin: auto;
 }
 
+/* Lista 1 */
+.lista1 > li {
+    float: left;
+}
+
+.lista1 li ul {
+    display: none;
+    position:;
+    min-height: 140px;
+}
+.lista1 ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction:row;
+}
+.lista1 li {
+    color: #fff;
+    background-color: #c5c026;
+    text-decoration: none;
+    padding: 15px 0px;
+    display: block;
+}
 /*viaje1*/
 .viaje1{
+    margin-top: 5px;
+    text-decoration: none;
     width: 29%;
     padding: 2% 0%;
-   
     background-color: #ebb852;
 }
 
