@@ -45,7 +45,6 @@ header{
 
 /* Foto inicio */
 .fotoInicio{
-    margin-top: 10px;
     background-color: #85c3dd;
     background-image: url("Imagenes/inicioFondo.jpg");
     width: 90%;
