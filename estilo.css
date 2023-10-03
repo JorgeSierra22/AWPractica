@@ -5,35 +5,89 @@ body{
 header{
     width:90%;
     margin: 0% 5%;
-    background: #3D6981; 
+    background-color: #3D6981;
     /*position:fixed; 
     left:10%;                 // Esto lo modificamos al final
     top: 0%; */ 
 }
 
 
+/* Informacion */
+.info{
+    font-weight: bold;
+    padding:  0px 0px;
+    float: right;
+    background-color: #3D6981;
+ }
+.info a{
+    color: #fff;
+    padding:  15px 50px;  
+    text-decoration: none;
+    background-color: #3D6981;
+    font-weight: bold;
+    margin: 0px;
+    float: right;
+}
+.info a:hover{
+    background-color: #85c3dd;
+}
+
+
+/* Barra de busqueda */
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 16px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: .5s ease-in-out; 
+    margin-top: 6px;
+}
+.buscar:hover{
+    width: 200px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    color: #07090a;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.i{
+    font-size: 22px;
+    color: #3D6981;
+    cursor: pointer;
+}
+
 /* Menu */
 .menu > li{
-    float: left;
+    float: right;
 }
 .menu li ul {
     display: none;
     position: absolute;
     min-height: 140px;
 }
-.menu ul {
+.menu ul {   /* Lista  */
     margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction:row;
 }
-.menu li a{
+.menu li a{  /* Cada boton */
+    display: block;
+    padding: 15px 20px;
     color: #fff;
     background-color: #3D6981;
     text-decoration: none;
-    padding: 15px 20px;
-    display: block;
+    font-weight: bold;
 }
 
 .menu li a:hover{
@@ -42,7 +96,55 @@ header{
 .menu li:hover > ul{
     display: block;
 }
+/* Boton menu cuando es mas pequeña la ventana */
+#BtnMenu{
+    display: none;
+}
 
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #07090a;
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color: #85c3dd;
+}
+
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: #3D6981;
+        width: 70%;
+        left: -100%;
+        transition: all .5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #BtnMenu:checked ~ .menu{
+        left: 0px;
+        margin: 0% 6%;
+    }
+    .checkBtn{
+        font-size: 20px;
+        line-height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
 /* Foto inicio */
 .fotoInicio{
     background-color: #85c3dd;
@@ -57,6 +159,8 @@ header{
     margin-top: 50px;
     text-align: center;
     color: #3D6981;
+    margin-bottom: 10px;
+    font-style: normal;
 }
 
 /* Los viajes disponibles  Panel azul definir la zona donde van a ir las imagenes*/
@@ -81,7 +185,6 @@ header{
     margin: 5px 5px;/* Separacion entre fotos vertical y horizontal */
 }
 
-
 /*viaje1*/
 .viaje1{
     margin-top: 5px;
@@ -89,6 +192,17 @@ header{
     width: 29%;
     padding: 2% 0%;
     background-color: #ebb852;
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    background-color: #3D6981;
+    width: 90%;
+    padding: 5% 0%;
+    margin: auto;
 }
 
 /* ////////////////////////////////////////////////// */
