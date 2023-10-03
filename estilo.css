@@ -55,43 +55,34 @@ header{
 
 /* Agencia texto */
 .texto{
+    margin-top: 50px;
     text-align: center;
     color: #3D6981;
 }
 
-/* Los viajes disponibles */
-.viajes{
+/* Los viajes disponibles  Panel azul definir la zona donde van a ir las imagenes*/
+.lista1{
     margin-top: 10px;
-    background-color: #85c3dd;
-    padding: 15%;
     width: 80%;
     margin: auto;
+    padding: 10px;
+    /*  background-color: #85c3dd; */ /* Ver la zona donde van a ir las imagenes */
 }
 
-/* Lista 1 */
-.lista1 > li {
-    float: left;
+.lista1 ul { 
+    display: flex;   /* Poner en horizontal la lista */
 }
 
-.lista1 li ul {
-    display: none;
-    position:;
-    min-height: 140px;
-}
-.lista1 ul {
-    margin: 0px;
-    list-style: none;
-    padding: 0px;
-    display: flex;
-    flex-direction:row;
-}
-.lista1 li {
+.lista1 li {         /* Las fotos */
     color: #fff;
-    background-color: #c5c026;
-    text-decoration: none;
-    padding: 15px 0px;
-    display: block;
+    background-image: url("Imagenes/japon.jpg"); /* Poner imagen de fondo */
+    text-align: center;
+    display: block;  /* Quitar puntito en las listas */
+    padding: 150px 50px; /* Tamaño de cada imagen */
+    margin: 5px 5px;/* Separacion entre fotos vertical y horizontal */
 }
+
+
 /*viaje1*/
 .viaje1{
     margin-top: 5px;
@@ -101,6 +92,8 @@ header{
     background-color: #ebb852;
 }
 
+/* ////////////////////////////////////////////////// */
+/* Codigo Luis */
 .lista{
     margin-top: 10px;
     background: #ebb852;  
