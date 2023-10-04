@@ -6,45 +6,24 @@ header{
     width:90%;
     margin: 0% 5%;
     background-color: #3D6981;
+    display: flex;
     /*position:fixed; 
     left:10%;                 // Esto lo modificamos al final
     top: 0%; */ 
 }
 
 
-/* Informacion */
-.info{
-    font-weight: bold;
-    padding:  0px 0px;
-    float: right;
-    background-color: #3D6981;
- }
-.info a{
-    color: #fff;
-    padding:  15px 50px;  
-    text-decoration: none;
-    background-color: #3D6981;
-    font-weight: bold;
-    margin: 0px;
-    float: right;
-}
-.info a:hover{
-    background-color: #85c3dd;
-}
-
-
-/* Barra de busqueda */
+/* Barra de busqueda 
 .buscar{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5px;
+    width: 100px;
     height: 16px;
     background-color: #eeeeee;
     border-radius: 8px;
     padding: 10px 20px;
     transition: .5s ease-in-out; 
-    margin-top: 6px;
 }
 .buscar:hover{
     width: 200px;
@@ -63,9 +42,87 @@ input{
     font-size: 22px;
     color: #3D6981;
     cursor: pointer;
+}*/
+/* Buscar Pantalla Grande */
+.buscar1{
+    display: flex;
+    background: white;
+    padding: 10px 10px;
+    height: 20px ;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
-/* Menu */
+.buscar_texto1{
+    border:none;
+    background:none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.boton_buscar1{
+    border:none;
+    background:white;
+    outline: none;
+    color:#3D6981;
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+/* Buscar pantalla pequeña */
+
+.buscar{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #3D6981;
+    padding: 10px 50px;
+    height: 40px ;
+    border-radius: 40px;
+}
+
+.buscar_texto{
+    border:none;
+    background:none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.boton_buscar{
+    border:none;
+    background:white;
+    outline: none;
+    color:#3D6981;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+/* Logo */
+
+.logo{
+    margin-top: 3px;
+    width: 80px;
+    margin-left: 25%;
+    display: none;
+}
+
+/* Titulo reyes */
+.reyes{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: aqua;
+    display: none;
+}
+/* Menu   display: none; */
 .menu > li{
     float: right;
 }
@@ -83,7 +140,7 @@ input{
 }
 .menu li a{  /* Cada boton */
     display: block;
-    padding: 15px 20px;
+    padding: 20px 20px;
     color: #fff;
     background-color: #3D6981;
     text-decoration: none;
@@ -103,10 +160,13 @@ input{
 
 header label{
     display: none;
-    width: 30px;
-    height: 30px;
+    width: 41px;
+    height: 41px;
     padding: 10px;
-    border-right: 1px solid #07090a;
+    border: #ddd;
+    background: white;
+    border-radius: 40px;
+    background-color: #3D6981;
 }
 
 header label:hover{
@@ -114,44 +174,13 @@ header label:hover{
     background-color: #85c3dd;
 }
 
-@media (max-width:768px){
-    header label{
-        display: block;
-    }
-    .menu{
-        position: absolute;
-        background: #3D6981;
-        width: 70%;
-        left: -100%;
-        transition: all .5s;
-    }
-    .menu ul{
-        flex-direction: column;
-    }
-    .menu li{
-        border-top: 1px solid #fff;
-    }
-    #BtnMenu:checked ~ .menu{
-        left: 0px;
-        margin: 0% 6%;
-    }
-    .checkBtn{
-        font-size: 20px;
-        line-height: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-
-}
 /* Foto inicio */
 .fotoInicio{
-    background-color: #85c3dd;
-    background-image: url("Imagenes/inicioFondo.jpg");
     width: 90%;
-    padding: 15% 0%;
     margin: auto;
+}
+img{
+    width: 100%;
 }
 
 /* Agencia texto */
@@ -194,6 +223,8 @@ header label:hover{
     background-color: #ebb852;
 }
 
+
+/* Pie de pagina */
 .pie{
     display: flex;
     justify-content: center;
@@ -203,6 +234,54 @@ header label:hover{
     width: 90%;
     padding: 5% 0%;
     margin: auto;
+}
+
+
+@media (max-width:880px){
+    header label{
+         display: block; 
+    }
+    .menu{
+        position: absolute;
+        background: #3D6981;
+        width: 70%;
+        left: -100%;
+        transition: all .5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #BtnMenu:checked ~ .menu{
+        left: 0%;
+        margin: 7.5% 6%;
+    }
+    .checkBtn{
+        font-size: 25px;
+        line-height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .reyes{
+        display: block;
+        background-color: #3D6981;
+        padding: 0px;
+        margin-left: 10px;
+    }
+
+    .logo{
+       display: block;
+    }
+    .buscar1{
+        display: none;
+    }
+    .buscar{
+        display: flex;
+    }
+
 }
 
 /* ////////////////////////////////////////////////// */
