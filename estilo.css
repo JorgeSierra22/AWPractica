@@ -284,12 +284,26 @@ img{
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    /* luis:borrar */
+    justify-content: center;
   }
   
   .viaje1 {
-    flex: 1 0 30%; /* Ajusta según sea necesario */
+    /* Esta linea forzaba a imprimir 3 imagenes y cuando habia una linea que tenia solo 1 o 2 se corrompia la presentacion */
+     /* flex: 1 0 30%; */  /* Ajusta según sea necesario */
+     /* SOLO FUNCIONABA PARA 3 IMAGENES */
+     /* flex: 1 0 calc(33.33% - 20px); */ /* Ajuste importante aquí */
+     /* Solucion: */
+     /* flex: 0 0 calc(30% - 20px);  */ /* Ajuste para el ancho de las imágenes con espacio SOLO FUNCIONA CON UNA IMAGEN*/
     margin: 10px; /* Ajusta el margen entre las imágenes */
     box-sizing: border-box; /* Asegura que el margen se incluya en el ancho del elemento */
+    /* tres nuevas lineas */
+    text-align: center;
+    position: relative;
+    /* SOLUCION PARA QUE MUESTRE BIEN HAYA LAS IMAGENES QUE HAYA POR FILA */
+    flex: 0 0 calc(30% - 20px);
+    
+
   }
   
   .viaje1 img {
@@ -345,5 +359,6 @@ img{
      bottom: 10px; */
    
   }
+ 
  
  
