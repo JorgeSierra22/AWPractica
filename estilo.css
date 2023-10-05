@@ -289,12 +289,12 @@ img{
     /* Aplicar un fondo negro */
     background-color: black;
   }
-  .pie__rrss a {
-    /* Aplicar un fondo negro a los enlaces */
-    background-color: black;
-    /* Puedes agregar estilos adicionales según sea necesario */
-  }
 
+  .pie__rrss {
+    text-align: center;
+    
+  }
+ 
 /* ////////////////////////////////////////////////// */
 /* Codigo Luis */
 .lista{
