@@ -287,13 +287,28 @@ img{
 }
 .pie__rrss img[src$=".png"] {
     /* Aplicar un fondo negro */
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    /* redondear las esquinas */
+    border-radius: 10px;
+    /*boede de color blanco*/
+    border : 2px solid rgb(255, 255, 255);
+    /*border-color: black;*/
+
   }
 
   .pie__rrss {
-    text-align: center;
+   
+    /* Establece un formato de visualización en línea (en línea) para los elementos secundarios */
+  display: flex;
+  /* Alinea los elementos secundarios en el eje principal (horizontalmente) */
+  justify-content: space-around; /* Puedes usar 'space-between', 'space-evenly', etc. según tus necesidades */
+  /* Ajusta el espacio entre los elementos secundarios */
+  gap: 50px; /* Otra opción sería 'margin-right' en los elementos secundarios */
+ 
+  
+}
     
-  }
+  
  
 /* ////////////////////////////////////////////////// */
 /* Codigo Luis */
