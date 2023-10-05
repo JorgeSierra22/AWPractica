@@ -285,6 +285,15 @@ img{
     padding: 5% 0%;
     margin: auto;
 }
+.pie__rrss img[src$=".png"] {
+    /* Aplicar un fondo negro */
+    background-color: black;
+  }
+  .pie__rrss a {
+    /* Aplicar un fondo negro a los enlaces */
+    background-color: black;
+    /* Puedes agregar estilos adicionales según sea necesario */
+  }
 
 /* ////////////////////////////////////////////////// */
 /* Codigo Luis */
