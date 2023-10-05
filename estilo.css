@@ -12,7 +12,6 @@ header{
     top: 0%; */ 
 }
 
-
 /* Barra de busqueda 
 .buscar{
     display: flex;
@@ -192,49 +191,6 @@ img{
     font-style: normal;
 }
 
-/* Los viajes disponibles  Panel azul definir la zona donde van a ir las imagenes*/
-.lista1{
-    margin-top: 10px;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-    /*  background-color: #85c3dd; */ /* Ver la zona donde van a ir las imagenes */
-}
-
-.lista1 ul { 
-    display: flex;   /* Poner en horizontal la lista */
-}
-
-.lista1 li {         /* Las fotos */
-    color: #fff;
-    background-image: url("Imagenes/japon.jpg"); /* Poner imagen de fondo */
-    text-align: center;
-    display: block;  /* Quitar puntito en las listas */
-    padding: 150px 50px; /* Tamaño de cada imagen */
-    margin: 5px 5px;/* Separacion entre fotos vertical y horizontal */
-}
-
-/*viaje1*/
-.viaje1{
-    margin-top: 5px;
-    text-decoration: none;
-    width: 29%;
-    padding: 2% 0%;
-    background-color: #ebb852;
-}
-
-
-/* Pie de pagina */
-.pie{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*  */
-    background-color: #3D6981;
-    width: 90%;
-    padding: 5% 0%;
-    margin: auto;
-}
 
 
 @media (max-width:880px){
@@ -282,6 +238,52 @@ img{
         display: flex;
     }
 
+}
+
+/* ///////////////////De aqui para abajo se puede modificar/////////////////////////////// */
+
+/* Los viajes disponibles  Panel azul definir la zona donde van a ir las imagenes*/
+.lista1{
+    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    /*  background-color: #85c3dd; */ /* Ver la zona donde van a ir las imagenes */
+}
+
+.lista1 ul { 
+    display: flex;   /* Poner en horizontal la lista */
+}
+
+.lista1 li {         /* Las fotos */
+    color: #fff;
+    background-image: url("Imagenes/japon.jpg"); /* Poner imagen de fondo */
+    text-align: center;
+    display: block;  /* Quitar puntito en las listas */
+    padding: 150px 50px; /* Tamaño de cada imagen */
+    margin: 5px 5px;/* Separacion entre fotos vertical y horizontal */
+}
+
+/*viaje1*/
+.viaje1{
+    margin-top: 5px;
+    text-decoration: none;
+    width: 29%;
+    padding: 2% 0%;
+    background-color: #ebb852;
+}
+
+
+/* Pie de pagina */
+.pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    background-color: #3D6981;
+    width: 90%;
+    padding: 5% 0%;
+    margin: auto;
 }
 
 /* ////////////////////////////////////////////////// */
