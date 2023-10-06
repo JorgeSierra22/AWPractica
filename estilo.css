@@ -12,154 +12,7 @@ header{
     top: 0%; */ 
 }
 
-/* Buscar pantalla pequeña */
-.buscar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #3D6981;
-    padding: 10px 50px;
-    height: 40px ;
-    border-radius: 40px;
-}
 
-.buscar_texto{
-    border:none;
-    background:none;
-    outline: none;
-    color: #3D6981;
-    font-size: 20px;
-    padding: 5px;
-}
-
-.boton_buscar{
-    border:none;
-    background:white;
-    outline: none;
-    color:#3D6981;
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 40px;
-}
-
-/* Titulo reyes */
-.reyes{
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    background-color: aqua;
-    display: none;
-    margin: 0px auto;
-}
-
-/* Foto inicio */
-.fotoInicio{
-    width: 90%;
-    margin: auto;
-}
-.fotoInicio img{
-    width: 100%;
-}
-
-
-  /* Pie de pagina */
-.pie{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3d5981;
-    width: 90%;
-    padding: 5% 0%;
-    margin: auto;
-    /* Luis: si no te mola lo quitamos , redondea los bordes y los pone negros  */
-     border-radius: 10px;
-    border: 3px solid black ; 
-}
-.pie__rrss img[src$=".png"] {
-    /* Aplicar un fondo negro */
-    background-color: rgb(0, 0, 0);
-    /* redondear las esquinas */
-    border-radius: 10px;
-    /*boede de color blanco*/
-    border : 2px solid rgb(255, 255, 255);
-    /*border-color: black;*/
-
-  }
-
-.pie__rrss {
-    /* Establece un formato de visualización en línea (en línea) para los elementos secundarios */
-  display: flex;
-  /* Alinea los elementos secundarios en el eje principal (horizontalmente) */
-  justify-content: space-around; /* Puedes usar 'space-between', 'space-evenly', etc. según tus necesidades */
-  /* Ajusta el espacio entre los elementos secundarios */
-  gap: 50px; /* Otra opción sería 'margin-right' en los elementos secundarios */
-}
-
-
-/* /////////////////////////////////////////////////////////////////// */
-
-.galeria{
-    font-family: 'open sans';
-}
-
-.galeria h1{
-    text-align: center;
-    margin: 20px 0px 15px 0px;
-    font-weight: 300;
-}
-
-.contenedor{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap:wrap;
-    border-radius: 3px;
-}
-
-.contenedor .imagen{
-    width: 32%;
-    position: relative;
-    height: 300px;
-    margin-bottom: 5px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-}
-
-.imagen img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.texto-imagen{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    background: rgba(113, 108, 108, 0.7); 
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-    overflow: hidden;
-}
-
-.texto-imagen h2{
-    color: #fff;
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.imagen:hover .texto-imagen{
-    height: 100%;
-    cursor: pointer;
-} 
 /* 777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777 */
 .nav-bar{
     width: 80%;
@@ -228,6 +81,145 @@ header{
 }
 /* 777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777 */
 
+/* Foto inicio */
+.fotoInicio{
+    width: 90%;
+    margin: auto;
+}
+.fotoInicio img{
+    width: 100%;
+}
+
+/* Buscar pantalla pequeña */
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #3D6981;
+    padding: 10px 100px;
+    height: 40px ;
+    border-radius: 40px;
+}
+
+.buscar_texto{
+    border:none;
+    background:none;
+    outline: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.boton_buscar{
+    border:none;
+    background:white;
+    outline: none;
+    color:#3D6981;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin: 40px 0px 15px 0px;
+    font-weight: 300;
+    color:#3d5981;
+}
+
+.contenedor{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    border-radius: 3px;
+}
+
+.contenedor .imagen{
+    width: 32%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-imagen{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: rgba(113, 108, 108, 0.7); 
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.texto-imagen h2{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .texto-imagen{
+    height: 100%;
+    cursor: pointer;
+} 
+
+/* Pie de pagina */
+.pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D6981;
+    width: 90%;
+    padding: 5% 0%;
+    margin: auto;
+    /* Luis: si no te mola lo quitamos , redondea los bordes y los pone negros  */
+     border-radius: 4px;
+}
+.pie__rrss img[src$=".png"] {
+    /* Aplicar un fondo negro */
+    background-color: rgb(0, 0, 0);
+    /* redondear las esquinas */
+    border-radius: 10px;
+    /*boede de color blanco*/
+    border : 2px solid rgb(255, 255, 255);
+    /*border-color: black;*/
+    
+  }
+
+.pie__rrss {
+    /* Establece un formato de visualización en línea (en línea) para los elementos secundarios */
+  display: flex;
+  left: 0px;
+  bottom: 0px;
+  /* Alinea los elementos secundarios en el eje principal (horizontalmente) */
+  justify-content: space-around; /* Puedes usar 'space-between', 'space-evenly', etc. según tus necesidades */
+  /* Ajusta el espacio entre los elementos secundarios */
+  gap: 50px; /* Otra opción sería 'margin-right' en los elementos secundarios */
+}
+
+
 @media screen and (max-width: 1200px){
     .contenedor{
         width: 90%;
@@ -237,12 +229,22 @@ header{
     }
 }
 
+@media screen and (max-width:620px){
+    .buscar_texto{
+        font-size: 15px;
+    }
+    .buscar{
+        padding: 10px 40px;
+    }
+    .galeria h1{
+        margin: 40px 0px 15px 0px;
+        font-size: 30px;
+        color:#3d5981;
+    }
+}
 
 
-
-/* Cuando la pantalla se reduce llega un tope y cambia la pagina web a esto */
-@media screen and (max-width:800px){
-
+@media screen and (max-width:950px){
     .menu34{
         flex-direction: column;
         align-items: center;
@@ -265,10 +267,18 @@ header{
 
     #check:checked ~ .menu34 {right: 0;}
 
+    .logo{
+        margin: 0px auto;
+    }
+}
+/* Cuando la pantalla se reduce llega un tope y cambia la pagina web a esto */
+@media screen and (max-width:800px){
+
+
+
     .galeria h1{
-        margin-top: 20px;
-        font-size: 22px;
-        color: red;
+        margin: 40px 0px 15px 0px;
+        font-size: 30px;
     }
     .contenedor{
         margin-top: 20px;
@@ -277,77 +287,13 @@ header{
     .contenedor .imagen{
         width: 80%;
     }
-    .logo{
-        margin: 0px auto;
+    .buscar{
+        padding: 10px 50px;
     }
-    
+
+    .buscar_texto{
+        font-size: 20px;
+    }
 
 }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-/* /////////////////////////////////////////////////////////////////// */
-/* .prueba{
-    display: flex;
-    width: 81%;
-    margin: 10px auto;
-    background: #9ddd85;
-}
-
-.pruebalista{
-    list-style: none;
-    width: 100%;
-    margin: auto;
-    padding: 0px;
-    align-items: center;
-    background: rgba(113, 108, 108, 0.7);
-    display: block;
-}
-.pruebalista li{
-    width: 500px;
-    background: #85c3dd;
-}
-
-.pruebalista li figure{
-    position: relative; 
-    margin: 0px;
-}
-
-.pruebalista li figure:hover figcaption{
-    display: block;
-}
-
-.pruebalista li figcaption{
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 3px;
-    right: 0px;
-    text-align: center;
-    padding: 15px;
-    font: 20px/30px Verdana;
-    color: white;
-    background: rgba(113, 108, 108, 0.7);
-} */
