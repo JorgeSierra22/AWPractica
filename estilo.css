@@ -398,7 +398,11 @@ header{
 }
 
 .pruebalista{
+   /*  list-style: none;
+    display: flex;
+    margin-left: -30px;*/
     list-style: none;
+<<<<<<< HEAD
     width: 100%;
     margin: auto;
     padding: 0px;
@@ -412,8 +416,31 @@ header{
 }
 
 .pruebalista li figure{
+=======
+    display: flex;
+    margin-left: 0;
+    
+} 
+.pruebalista li{
+
+    /* width: 400px;
+    float: left;
+    margin: 0px; */
+    width: 100%; /* Cambiado a 100% para ser más flexible */
+    margin: 0;
+    box-sizing: border-box; /* Considerar el modelo de caja border-box para evitar problemas con el ancho */
+}
+
+.pruebalista li figure{
+   /*  padding: 5px;
+>>>>>>> e91c64a0e64bdb5c4362bb1c39ab1e5d6641a079
     position: relative; 
-    margin: 0px;
+    margin: 0px; */
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 .pruebalista li figure:hover figcaption{
@@ -421,7 +448,7 @@ header{
 }
 
 .pruebalista li figcaption{
-    display: none;
+    /* display: none;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -430,6 +457,17 @@ header{
     text-align: center;
     padding: 15px;
     font: 20px/30px Verdana;
+    color: white;
+    background: rgba(113, 108, 108, 0.7); */
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    padding: 5px;
+    font: 1.5rem/2.5rem Verdana; /* Cambiado a unidades rem */
     color: white;
     background: rgba(113, 108, 108, 0.7);
 } */
