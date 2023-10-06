@@ -350,7 +350,7 @@ img{
 }
 
 /* Cuando la pantalla se reduce llega un tope y cambia la pagina web a esto */
-@media (max-width:1100px){
+@media (max-width:1400px){
     
     .pruebalista{
         display: block;
@@ -361,6 +361,29 @@ img{
         width: 50%;
     }
 }
+
+@media (max-width:800px){
+    
+    .pruebalista{
+        display: block;
+    }
+
+    .pruebalista li{
+        width: 100%;
+    }
+}
+
+@media (max-width:1200px){
+    
+    .pruebalista{
+        display: block;
+    }
+
+    .pruebalista li{
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width:959px){
     header label{
          display: block; 
@@ -405,14 +428,6 @@ img{
     }
     .buscar{
         display: flex;
-    }
-
-    .pruebalista{
-        display: block;
-    }
-    .pruebalista li{
-        float: left;
-        width: 100%;
     }
 }
  
