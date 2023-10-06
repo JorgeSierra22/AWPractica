@@ -5,15 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reyes Traveling</title>
-    <link rel="shortcut icon "
-        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf42BmDmUyFwKn_D2-bWY6ne1ddP-xO-haF2Wc_KWqEDGiWxYC7yUDrwvp0eXyxRYWqgM&usqp=CAU"
-        ;>
+    <link rel="shortcut icon"href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf42BmDmUyFwKn_D2-bWY6ne1ddP-xO-haF2Wc_KWqEDGiWxYC7yUDrwvp0eXyxRYWqgM&usqp=CAU">
     <link rel="stylesheet" href="estilo.css">
-    <script src="https://kit.fontawesome.com/95f21c46e1.js" crossorigin="anonymous"></script> <!-- No quitar -->
+    <script src="https://kit.fontawesome.com/95f21c46e1.js" crossorigin="anonymous"></script> <!-- No quitar <i class="fa-solid fa-bars"></i> -->
 </head>
 
 <body>
-    <!-- Esta parte del codigo no tocar -->
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class = logo > <img src="Imagenes/LogoOriginal.png" alt="Foto de inicio"></li>
+                <input type="checkbox" id="check">
+                <span class = "menu34">
+                    <li><a
+                        href="https://www.amazon.es/?tag=admarketpl0c0-21&ref=pd_sl_9a13570779db23730a69511ed468b3b61a3bd7b96e6c1528e66ccbfb&mfadid=adm">Reservas</a>
+                    </li>
+                    <li><a
+                        href="https://www.amazon.es/?tag=admarketpl0c0-21&ref=pd_sl_9a13570779db23730a69511ed468b3b61a3bd7b96e6c1528e66ccbfb&mfadid=adm">Viajes
+                        guiados</a></li>
+                    <li><a
+                        href="https://www.amazon.es/?tag=admarketpl0c0-21&ref=pd_sl_9a13570779db23730a69511ed468b3b61a3bd7b96e6c1528e66ccbfb&mfadid=adm">Descuentos</a>
+                    </li>
+                    <li><a href="#">Informacion</a></li>
+                    <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="fotoInicio">
+        <img src="Imagenes/inicioFondo.jpg" alt="Foto de inicio">
+    </div>
+
+    <div class="buscar">
+        <input type="text" class="buscar_texto" placeholder="Buscar">
+        <a href="" class="boton_buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+    </div>
+
+    <div class = "galeria">
+        <h1>¿Pensado en tu proximo viaje?</h1>
+        <div class ="contenedor">
+            <div class = "imagen">
+                <img src="Imagenes/japon.jpg" alt="">
+                <div class="texto-imagen">
+                    <h2>Suscribete</h2>
+                </div>
+            </div>
+            <div class = "imagen">
+                <img src="Imagenes/japon.jpg" alt="">
+                <div class="texto-imagen">
+                    <h2>Suscribete</h2>
+                </div>
+            </div>
+            <div class = "imagen">
+                <img src="Imagenes/japon.jpg" alt="">
+                <div class="texto-imagen">
+                    <h2>Suscribete</h2>
+                </div>
+            </div>
+            <div class = "imagen">
+                <img src="Imagenes/japon.jpg" alt="">
+                <div class="texto-imagen">
+                    <h2>Suscribete</h2>
+                </div>
+            </div>
+            <div class = "imagen">
+                <img src="Imagenes/japon.jpg" alt="">
+                <div class="texto-imagen">
+                    <h2>Suscribete</h2>
+                </div>
+            </div>
+            <div class = "imagen">
+                <img src="Imagenes/japon.jpg" alt="">
+                <div class="texto-imagen">
+                    <h2>Suscribete</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pie">
+        <div class="pie__rrss">
+            <a href="https://www.facebook.com/UniComplutense"><img src="Imagenes/facebook.png"
+                    alt="de la aplicacion facebook de la universidad complutense de madrid""></a>
+                <a href=" https://twitter.com/unicomplutense"><img src="Imagenes/twitter.png"
+                    alt="logo de la aplicacion twitter de la universidad complutense de madrid"></a>
+            <a href="https://www.instagram.com/uni.complutense/"><img src="Imagenes/instagram.png"
+                    alt="logo de la aplicacion instagram de la universidad complutense de madrid"></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
     <header>
         <input type="checkbox" id="BtnMenu">
         <label for="BtnMenu" class="checkBtn"><i class="fa-solid fa-bars"></i></label>
@@ -46,141 +135,4 @@
             </a>
         </div>
     </header>
-
-    <div class="fotoInicio">
-        <img src="Imagenes/inicioFondo.jpg" alt="Foto de inicio">
-    </div>
-
-    <div class="buscar">
-        <input type="text" class="buscar_texto" placeholder="Buscar">
-        <a href="" class="boton_buscar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </a>
-    </div>
-
-    <div class="texto">
-        <h1>¿Pensado en tu proximo viaje?</h1>
-    </div>
-
-    <!-- De aqui para abajo se puede modificar todo -->
-    <!-- Cambio por luis el 5/10/23 17:30 -->
-
-    <!-- <div class="lista1"> -->
-    <!-- <ul>
-            <li class="viaje1"><p>Hola</p></li>
-            <li class="viaje1"><p>Hola</p></li>
-            <li class="viaje1"><p>Hola</p></li>
-        </ul>
-        <ul>
-            <li class="viaje1"><p>Hola</p></li>
-            <li class="viaje1"><p>Hola</p></li>
-            <li class="viaje1"><p>Hola</p></li>
-        </ul>
-        <ul>
-            <li class="viaje1"><p>Hola</p></li>
-            <li class="viaje1"><p>Hola</p></li>
-            <li class="viaje1"><p>Hola</p></li>
-        </ul>  -->
-
-    <div class="lista1">
-        <ul class="lista1__ul">
-            <li class="viaje1">
-                <div class="viaje1__texto">Luis</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">Jorge es guapo</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">guaposhdosh</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">modelito de revista...</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">y si</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">Luis</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">Luis</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">Luis</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">Luis</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">Luis</div>
-            </li>
-            <li class="viaje1">
-                <div class="viaje1__texto">Luis</div>
-            </li>
-
-        </ul>
-    </div>
-
-    <div class = "prueba">
-        <ul class = "pruebalista">
-            <li>
-                <figure>
-                    <img src="Imagenes/japon.jpg" alt="">
-                    <figcaption>
-                        <p>Este es el texto de la imagen</p>
-                        <p>El coste es de 100$</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="Imagenes/japon.jpg" alt="">
-                    <figcaption>
-                        <p>Este es el texto de la  imagen mejorada</p>
-                        <p>El coste es de 1000$</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="Imagenes/japon.jpg" alt="">
-                    <figcaption>
-                        <p>Este es el texto de la  imagen mejorada</p>
-                        <p>El coste es de 1000$</p>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-    </div>
-
-    <footer class="pie">
-        
-        <div class="pie__rrss">
-            <a href="https://www.facebook.com/UniComplutense"><img src="Imagenes/facebook.png"
-                    alt="de la aplicacion facebook de la universidad complutense de madrid""></a>
-                <a href=" https://twitter.com/unicomplutense"><img src="Imagenes/twitter.png"
-                    alt="logo de la aplicacion twitter de la universidad complutense de madrid"></a>
-            <a href="https://www.instagram.com/uni.complutense/"><img src="Imagenes/instagram.png"
-                    alt="logo de la aplicacion instagram de la universidad complutense de madrid"></a>
-
-        </div>
-
-
-    </footer>
-    <!-- 
-    <ul class="listaDestinos">
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        <li class="destino"><img src="Imagenes/japon.jpg" alt=""></li>
-        
-    </ul>
  -->
-</body>
-
-</html>
