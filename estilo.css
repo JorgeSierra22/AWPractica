@@ -65,78 +65,6 @@ header{
     width: 100%;
 }
 
-/* Agencia texto */
-
-
-
-/* ///////////////////De aqui para abajo se puede modificar/////////////////////////////// */
-
-/* Los viajes disponibles  Panel azul definir la zona donde van a ir las imagenes*/
-.lista1{
-    margin-top: 10px;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-    background-color: #85c3dd;  /* Ver la zona donde van a ir las imagenes */
-}
-
-.lista1 ul { 
-    display: flex;   /* Poner en horizontal la lista */
-}
-
-.lista1 li {         /* Las fotos */
-    color: #fff;
-    background-image: url("Imagenes/japon.jpg"); /* Poner imagen de fondo */
-    text-align: center;
-    display: block;  /* Quitar puntito en las listas */
-    padding: 150px 50px; /* Tamaño de cada imagen */
-    margin: 5px 5px;/* Separacion entre fotos vertical y horizontal */
-} 
-
-/* Luis: te comento esto un momento */
-/*viaje1*/
-/* .viaje1{
-    margin-top: 5px;
-    text-decoration: none;
-    width: 29%;
-    padding: 2% 0%;
-    background-color: #ebb852;
-} */
-
-/* Codigo Luis */
-/* Luis borrar luego si sale mal */
-
-.lista1__ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    /* luis:borrar */
-    justify-content: center;
-  }
-  
-.viaje1 {
-    /* Esta linea forzaba a imprimir 3 imagenes y cuando habia una linea que tenia solo 1 o 2 se corrompia la presentacion */
-     /* flex: 1 0 30%; */  /* Ajusta según sea necesario */
-     /* SOLO FUNCIONABA PARA 3 IMAGENES */
-     /* flex: 1 0 calc(33.33% - 20px); */ /* Ajuste importante aquí */
-     /* Solucion: */
-     /* flex: 0 0 calc(30% - 20px);  */ /* Ajuste para el ancho de las imágenes con espacio SOLO FUNCIONA CON UNA IMAGEN*/
-    margin: 10px; /* Ajusta el margen entre las imágenes */
-    box-sizing: border-box; /* Asegura que el margen se incluya en el ancho del elemento */
-    /* tres nuevas lineas */
-    text-align: center;
-    position: relative;
-    /* SOLUCION PARA QUE MUESTRE BIEN HAYA LAS IMAGENES QUE HAYA POR FILA */
-    flex: 0 0 calc(30% - 20px);
-}
-  
-.viaje1 img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block; /* Elimina el espacio adicional debajo de las imágenes */
-}
 
   /* Pie de pagina */
 .pie{
@@ -171,16 +99,6 @@ header{
   gap: 50px; /* Otra opción sería 'margin-right' en los elementos secundarios */
 }
 
-.viaje1__texto {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido en negro */
-    padding: 10px;
-    border-radius: 5px;
-    size-adjust: inherit;
-    /* Para que el div ocupe el tamaño de su contenido y no de su contenedor */
-    display: inline-block; 
-    /* position: absolute;
-     bottom: 10px; */
-}
 
 /* /////////////////////////////////////////////////////////////////// */
 
@@ -398,11 +316,7 @@ header{
 }
 
 .pruebalista{
-   /*  list-style: none;
-    display: flex;
-    margin-left: -30px;*/
     list-style: none;
-<<<<<<< HEAD
     width: 100%;
     margin: auto;
     padding: 0px;
@@ -416,31 +330,8 @@ header{
 }
 
 .pruebalista li figure{
-=======
-    display: flex;
-    margin-left: 0;
-    
-} 
-.pruebalista li{
-
-    /* width: 400px;
-    float: left;
-    margin: 0px; */
-    width: 100%; /* Cambiado a 100% para ser más flexible */
-    margin: 0;
-    box-sizing: border-box; /* Considerar el modelo de caja border-box para evitar problemas con el ancho */
-}
-
-.pruebalista li figure{
-   /*  padding: 5px;
->>>>>>> e91c64a0e64bdb5c4362bb1c39ab1e5d6641a079
     position: relative; 
-    margin: 0px; */
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    margin: 0px;
 }
 
 .pruebalista li figure:hover figcaption{
@@ -448,7 +339,7 @@ header{
 }
 
 .pruebalista li figcaption{
-    /* display: none;
+    display: none;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -457,17 +348,6 @@ header{
     text-align: center;
     padding: 15px;
     font: 20px/30px Verdana;
-    color: white;
-    background: rgba(113, 108, 108, 0.7); */
-    display: none;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    text-align: center;
-    padding: 5px;
-    font: 1.5rem/2.5rem Verdana; /* Cambiado a unidades rem */
     color: white;
     background: rgba(113, 108, 108, 0.7);
 } */
