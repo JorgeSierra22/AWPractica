@@ -1,0 +1,29 @@
+body{
+    background-size: 100%;
+    font-family: sans-serif;
+}
+header{
+   width: 100%;
+   margin: 0px auto;
+}
+/* form{
+     background-color: rgb(6, 90, 81); 
+} */
+
+.slide img{
+    height: 65vh;
+    object-fit: cover; 
+}
+@media screen and (max-width: 575px){
+    .slide img{
+        height: 40vh;
+        object-fit: cover; 
+    }
+}
+
+@media screen and (max-width: 300px){
+    .slide img{
+        height: 20vh;
+        object-fit: cover; 
+    }
+}

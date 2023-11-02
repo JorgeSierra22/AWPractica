@@ -1,0 +1,421 @@
+body{
+    background-size: 100%;
+    font-family: sans-serif;
+    position: absolute;
+}
+header{
+    width:90%; /* Tamaño de el header */
+    margin: 0px auto;  /* Margen auto para colocarlo en el centro */
+    background-color: #3D6981; /* Fondo del header */
+}
+
+.nav-bar{
+    width: 80%;  /* Tamaño de ancho del contenedor */
+    display: flex; /* Que se muestren en fila */
+    justify-content: space-between; /* Para una distribucion uniforme */
+    align-items: center;    /* Elementos centrados */
+    list-style: none; /* Quitar estilo de lista */
+    position: relative; /* Posicion relativa del contenedor */
+    padding: 12px 20px; /* Margen de el contenido con el contenedor */
+    margin: 0px auto; /* Margen del contendor */
+}
+
+.menu {display: flex;}  /* Contenido del menu sea con distribucion uniforme */
+.menu  li {padding-left: 30px;} /* Dejar un margen izquiedo 30px */
+.menu  li a{
+    display: inline-block; /* Elementos en bloque pero en linea */
+    text-decoration: none; /* Quitar subrayado */
+    color: #fff; /* Color de los enlaces */
+    text-align: center; /* Centrar los enlaces */
+    position: relative; 
+    text-transform: uppercase; /* Texto en mayuscula */
+}
+
+.menu  li a::after{/* Generar una linea debajo de los componentes del menu */
+    content: " ";
+    position: absolute; /* Posicion justo debajo de los componentes del menu */
+    bottom: 0; /* Margenes */
+    left: 0;
+    width: 0;   /* Tamaño 0 hasta que se pase por encima */
+    height: 1px;   /* Anchura de la linea */
+    background:#fff; /* Color de la linea */
+    transition: 0.15s ease-in-out; /* Que la transicion cuando se vea se realice en 0.15 seg */
+}
+.menu  li a:hover::after{width: 100%;} 
+
+.open-menu , .close-menu {
+    position: absolute; /* Posicion con respecto a nav_bar */
+    color: #fff;   /* Color de los botones */
+    cursor: pointer; /* Mostrar mano para saber que se puede clickar */
+    font-size: 1.5rem;  /* Tamaño 1.5 veces el tamaño de fuente */
+    display: none; /* No mostrar al inicio */
+}
+
+.open-menu{
+    top: 50%;     /* Margenes del boton */
+    right: 20px;
+    transform: translateY(-50%);  /* Colocarlo en el centro */
+}
+
+.close-menu{
+    top: 20px; /* Margenes del boton  */
+    right: 20px;
+}
+
+#check{display: none;} /* Que este oculto hasta que consideremos el boton de menu */
+
+/* Logo */
+.logo{
+    margin: 10px 0px; /* Margenes */
+    width: 80px; /* Anchura */
+}
+
+.logo img{
+    width: 100%; /* Anchura imagen logo con respecto al contenedor*/
+}
+
+/* Foto inicio */
+.fotoInicio{
+    width: 90%; /* Anchura del contenedor */
+    margin: auto; /* Centrar  */
+}
+.fotoInicio img{
+    width: 100%; /* Anchura imagen logo con respecto al contenedor*/
+}
+
+/* Buscar pantalla pequeña */
+.buscar{
+    display: flex;  /* Contenido del buscar sea con distribucion uniforme */
+    position: absolute; 
+    left: 50%; /* MArgen izquierdo del 50% */
+    transform: translate(-50%, -50%); /* Centrar el elemento */
+    justify-content: center;
+    align-items: center;
+    background: #3D6981; /* Color Fondo de contendor */
+    padding: 10px 100px; /* Margen de texto con contenedor */
+    height: 40px ;
+    border-radius: 40px;/* Redondear el borde */
+}
+
+.buscar_texto{
+    border:none; /* Ocultar borde de panel buscar_texto */
+    background:none; /* Sin fondo */
+    outline: none; /* Cuando estes para escribir que tampoco se vea borde*/
+    color: #fff; /* Color de letras */
+    font-size: 30px; /* Tamaño letras */
+    padding: 5px; /* Margen de texto con contenedor */
+}
+
+.boton_buscar{
+    border:none;
+    background:white;  /* Color Fondo de contendor */
+    color:#3D6981; /* Color texto del contenedor */
+    font-size: 30px; /* Tamaño de la fuente */
+    padding: 5px;/* Margen de texto con contenedor */
+    border-radius: 40px;/* Redondear el borde */
+}
+
+/*Panel de viajes */
+
+.galeria{
+    font-family: "sans-serif"; /* Fuente de los textos del contenedor */
+}
+
+.galeria h1{
+    text-align: center; /* Centrar el h1 */
+    margin: 40px 0px 15px 0px; /* MArgenees del texto */
+    font-weight: 300; /* Tamaño de la fuente */
+    color:rgb(61, 89, 129); /* Color del texto */
+    text-transform: uppercase; /* Poner en mayuscula */
+}
+
+.contenedor_img{
+    display: flex;/* Contenido sea con distribucion uniforme */
+    width: 80%; /* Anchura del contenedor */
+    margin: auto; /* Se coloca en el centro por el auto */
+    justify-content: space-around; /* Colocarse con respecto al eje horizontal con espacio */
+    flex-wrap:wrap;  /* Adaptarse al espacio */
+    border-radius: 3px; /* Redondear las esquinas */
+}
+
+.contenedor_img .imagen{
+    position: relative; /* Posicion  */
+    height: 300px; /* Tamaño */
+    width: 32%; 
+    margin-bottom: 5px; /* Margen inferior */
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75); /* Sombra */
+}
+
+.imagen img{
+    width: 100%; /* Tamaños */
+    height: 100%; 
+    object-fit: cover; /* Imagen bien colocada */
+}
+
+.texto-imagen{
+    position: absolute; /* Posicion */
+    bottom: 0px; /* Margen para centrar */
+    left: 0;
+    background: rgb(61, 105, 129, 0.7);  /* Fondo de texto */
+    width: 100%; /* Ancho de contenedor */
+    height: 0; /* Tamaño 0 hasta que se pase por encima */
+    transition: .5s ease; /* Transicion para que aparezca */
+    overflow: hidden; /* Por si se excede el texto que no se muestre */
+}
+
+.imagen:hover .texto-imagen{
+    height: 100%; /* Mostar la imagen */
+    cursor: pointer; /* Se cambie raton por mano para clickar */
+} 
+
+.texto-imagen h2{
+    color: #fff; /* Color del texto */
+    font-size: 30px; /* Tamalo de la fuente */
+    position: absolute; /*Centrar texto aunque al principio no aparece */
+    text-align: center;
+    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+}
+
+/* Pie de pagina */
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.pieWeb{
+    background-color:rgb(61, 105, 129);
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    width: 80%;
+    margin: 80px  auto 0px auto;
+}
+
+.pieWeb .pie-izquierda , .pieWeb .pie-centro,  .pieWeb .pie-derecha {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pieWeb .pie-izquierda{
+    width: 30%;
+}
+.pieWeb h3 {
+    color:#fff;
+    font: normal 36px 'cookie', cursive;
+    margin: 0;
+}
+
+.pieWeb h3 span{
+    color:crimson;
+    font: normal 36px 'cookie', cursive;
+    margin: 0;
+}
+
+.pieWeb .pie-links{
+    color: #fff;
+    margin: 20px 0 12px;
+}
+
+.pieWeb .pie-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.pieWeb .pie-nombre{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.pieWeb .pie-centro{
+    width: 35%;
+}
+
+.pieWeb .pie-centro i{
+    background-color: #33383b;
+    color: #fff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle; 
+}
+
+.pieWeb .pie-centro i .fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.pieWeb .pie-centro p{
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.pieWeb .pie-centro p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.pieWeb .pie-centro p span{
+    color: yellow;
+    text-decoration: none;
+}
+
+.pieWeb .pie-derecha {
+    width: 30%;
+}
+
+.pieWeb .pie-compañia-about{
+    line-height: 20px;
+    color:#fff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.pieWeb .pie-compañia-about span{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pieWeb .pie-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:grey;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+}
+.pieWeb .pie-icons a img{
+    width: 100%;
+    height: 100%;
+}
+.pieWeb .pie-icons a:hover{
+    background-color: cadetblue;
+}
+
+.pieWeb .pie-links a:hover{
+    color: cadetblue;
+}
+
+
+/* Web responsive  */
+@media screen and (max-width: 1200px){ /* Modficar tamaños */
+    .contenedor_img{
+        width: 90%;
+    }
+    .contenedor_img .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:950px){
+    .menu {
+        flex-direction: column; /* En columnas los elemntos del menu */
+        align-items: center; /* Centrar el menu */
+        justify-content: center;
+        width: 100%; /* Toada la pantalla */
+        height: 100%;
+        position: fixed; /* Fijar el contenedor */
+        top: 0;
+        right: -100%; /* Para esconder el menu */
+        z-index: 100; 
+        background-color: #3D6981;
+        transition: all 0.2s ease-in-out; /* Mostrarlo con transicion */
+    }
+    .menu  li {margin-top: 40px;}  /* Margenes */
+    .menu  li a{ padding: 10px;}
+    .open-menu, .close-menu { display: block;}  /* Mostrar el boton menu */
+    #check:checked ~ .menu  {right: 0;}  /* Para que aparezca el menu */
+    .logo{ margin: 0px auto;} /* Centrar logo */
+}
+
+@media(max-width: 880px){
+    .pieWeb .pie-links, .pieWeb .pie-centro , .pieWeb .pie-izquierda, .pieWeb .pie-derecha{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .pieWeb .pie-centro i{ margin-left: 0;}
+}
+
+@media screen and (max-width:800px){
+    .footer{ position: static;}
+    .galeria h1{                     /* Modficar tamaños */
+        margin: 40px 0px 15px 0px;
+        font-size: 30px;
+    }
+    .contenedor_img{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .contenedor_img .imagen{width: 80%;}
+    .buscar{padding: 10px 50px;}
+    .buscar_texto{font-size: 20px;}
+}
+
+@media screen and (max-width:620px){ /* Modficar tamaños */
+    .buscar_texto{font-size: 15px;}
+    .buscar{padding: 10px 40px;}
+    .galeria h1{
+        margin: 40px 0px 15px 0px;
+        font-size: 20px;
+    }
+}
+ 
+@media screen and (max-width:480px){ /* Modficar tamaños */
+    .buscar_texto{font-size: 15px;}
+    .buscar{padding: 5px 10px;}
+    .galeria h1{
+        margin: 40px 0px 15px 0px;
+        font-size: 15px;
+    }
+    .texto-imagen h2{
+        font-size: 20px; /* Tamalo de la fuente */
+    }
+    .contenedor_img .imagen{
+        height: 200px; /* Tamaño */
+    }
+}
+
+@media screen and (max-width:320px){ /* Modficar tamaños */
+    .buscar_texto{font-size: 10px;}
+    .buscar{ padding: 5px 10px;}
+    .galeria h1{
+        margin: 40px 0px 15px 0px;
+        font-size: 10px;
+    }
+    .texto-imagen h2{
+        font-size: 10px; /* Tamalo de la fuente */
+    }
+    .contenedor_img .imagen{
+        height: 150px; /* Tamaño */
+    }
+}

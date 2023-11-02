@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reyes Traveling</title>
-    <link rel="shortcut icon"href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf42BmDmUyFwKn_D2-bWY6ne1ddP-xO-haF2Wc_KWqEDGiWxYC7yUDrwvp0eXyxRYWqgM&usqp=CAU">
-    <link rel="stylesheet" href="estilo.css">
+<!--     <link rel="shortcut icon"href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf42BmDmUyFwKn_D2-bWY6ne1ddP-xO-haF2Wc_KWqEDGiWxYC7yUDrwvp0eXyxRYWqgM&usqp=CAU">
+ -->    <link rel="stylesheet" href="Estilos/estilo.css">
     <script src="https://kit.fontawesome.com/95f21c46e1.js" crossorigin="anonymous"></script> <!-- No quitar <i class="fa-solid fa-bars"></i> -->
 </head>
 
@@ -16,9 +16,9 @@
             <ul class="nav-bar">
                 <li class = logo > <img src="Imagenes/LogoOriginal.png" alt="Foto de inicio"></li>
                 <input type="checkbox" id="check">
-                <span class = "menu34">
+                <span class = "menu">
                     <li><a
-                        href="#">Reservas</a>
+                        href="reservas.html">Reservas</a>
                     </li>
                     <li><a
                         href= "#">Viajes
@@ -35,7 +35,7 @@
     </header>
 
     <div class="fotoInicio">
-        <img src="Imagenes/inicioFondo.jpg" alt="Foto de inicio">
+        <img src="Imagenes/fondoInicio.jpg" alt="Foto de inicio">
     </div>
 
     <div class="buscar">
@@ -47,7 +47,7 @@
 
     <div class = "galeria">
         <h1>¿Pensado en tu proximo viaje?</h1>
-        <div class ="contenedor">
+        <div class ="contenedor_img">
             <div class = "imagen">
                 <img src="Imagenes/asturias.jpg" alt="Asturias">
                 <div class="texto-imagen">
@@ -87,16 +87,52 @@
         </div>
     </div>
 
-    <footer class="pie">
-        <!-- <div class="pie__Eslogan"><h3>Imaginarlo no es suficiente </h3></div> -->
-        <div class="pie__rrss">
-            <a href="https://www.facebook.com/UniComplutense"><img src="Imagenes/facebook.png"
-                    alt="de la aplicacion facebook de la universidad complutense de madrid""></a>
-                <a href=" https://twitter.com/unicomplutense"><img src="Imagenes/twitter.png"
+    <footer class="pieWeb">
+        <div class="pie-izquierda">
+            <h3>Reyes <span>Traveling</span></h3>
+            <p class = "pie-links">
+                <a href="reservas.html">Reservas</a>
+                |
+                <a href="#">Viajes Guiados</a>
+                |
+                <a href="#">Descuentos</a>
+                |
+                <a href="#">Informacion</a>
+            </p>
+            <!-- <p class = "pie-nombre"> Copyright 2021 <strong>ReyesTraveling Developer</strong>
+            All rights reserved</p> -->
+            <div class ="pie-icons">
+                <a href="https://www.facebook.com/UniComplutense" target="_blank"><img src="Imagenes/facebook.png" 
+                    alt="de la aplicacion facebook de la universidad complutense de madrid""></a>  <!--  target="_blank" para abrir una nueva ventana -->
+                <a href=" https://twitter.com/unicomplutense" target="_blank"><img src="Imagenes/twitter.png"
                     alt="logo de la aplicacion twitter de la universidad complutense de madrid"></a>
-            <a href="https://www.instagram.com/uni.complutense/"><img src="Imagenes/instagram.png"
+                <a href="https://www.instagram.com/uni.complutense/" target="_blank"><img src="Imagenes/instagram.png"
                     alt="logo de la aplicacion instagram de la universidad complutense de madrid"></a>
+            </div>
+        </div>
+        <div class="pie-centro">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p><span>San Sebastian de los Reyes</span>
+                Madrid</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 601 19 28 54</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="#">reyestraveling@ucm.es</a></p>
+            </div>
+        </div>
 
+        <div class ="pie-derecha">
+            <p class = "pie-compañia-about">
+                <span>Sobre la compañia</span>
+                <strong>Reyes Tavelenig</strong> es una agencia de viajes una agencia de viajes apasionada por hacer realidad tus sueños
+                 de aventura y descubrimiento. Con años de experiencia en la industria, nuestro equipo de expertos en viajes está aquí 
+                 para convertir tus vacaciones en experiencias inolvidables. 
+            </p>
         </div>
     </footer>
 </body>
