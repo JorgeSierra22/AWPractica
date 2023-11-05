@@ -6,34 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reyes Traveling</title>
 <!--     <link rel="shortcut icon"href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf42BmDmUyFwKn_D2-bWY6ne1ddP-xO-haF2Wc_KWqEDGiWxYC7yUDrwvp0eXyxRYWqgM&usqp=CAU">
- -->    <link rel="stylesheet" href="Estilos/estilo.css">
+ -->  
     <script src="https://kit.fontawesome.com/95f21c46e1.js" crossorigin="anonymous"></script> <!-- No quitar <i class="fa-solid fa-bars"></i> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilos/estilo.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class = logo > <img src="Imagenes/LogoOriginal.png" alt="Foto de inicio"></li>
-                <input type="checkbox" id="check">
-                <span class = "menu">
-                    <li><a
-                        href="reservas.html">Reservas</a>
+        <nav class="navbar navbar-expand-lg navbar-dark mt-sm-2 pt-4 pb-4" style="background-color: #3D6981; width: 90%; margin: 0 auto;">
+
+            <!-- icono -->
+            <a class="navbar-brand me-auto ms-4 " href="#">
+                <img src="Imagenes/LogoOriginal.png" alt="Foto de inicio" width="75" height="50">
+            </a>
+            <!--Boton menu  -->
+            <button class = "navbar-toggler ms-auto me-2" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class = "collapse navbar-collapse" id="opciones">
+                <ul class = "navbar-nav ms-auto me-sm-5">
+                    <li class="nav-item ms-4">
+                        <a class="nav-link fw-normal text-decoration-underline active" href="#">RESERVAS</a>
                     </li>
-                    <li><a
-                        href= "#">Viajes
-                        guiados</a></li>
-                    <li><a
-                        href="#">Descuentos</a>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link fw-normal text-decoration-underline active" href="#">VIAJES GUIADOS</a>
                     </li>
-                    <li><a href="#">Informacion</a></li>
-                    <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
-            </ul>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link fw-normal text-decoration-underline active" href="#">DESCUENTOS</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link fw-normal text-decoration-underline active" href="#">INFORMACION</a>
+                    </li>
+                </ul>
+            </div>
+            
         </nav>
     </header>
-
     <div class="fotoInicio">
         <img src="Imagenes/fondoInicio.jpg" alt="Foto de inicio">
     </div>
@@ -45,6 +57,24 @@
         </a>
     </div>
 
+    <div class = "galeria">
+        <h1>¿Pensado en tu proximo viaje?</h1>
+        <div class ="contenedor_img">
+            <% if(destinosList.length > 0) {%>
+                <% destinosList.map(destino => { %>
+                    <div class = "imagen">
+                        <img src="<%= destino.imagen %>" alt="<%= destino.nombre %>">
+                        <a href="/reservas?destino=<%=destino.nombre%>"><div class="texto-imagen"> <!-- /<%=destino.nombre%> -->
+                            <h2> <%= destino.nombre %>: <i> <%= destino.descripcion %> <%= destino.precio %>$/dia</i> </h2>
+                        </div></a>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p> No existen imagenes </p>
+            <% } %>
+        </div>
+    </div>
+<!-- 
     <div class = "galeria">
         <h1>¿Pensado en tu proximo viaje?</h1>
         <div class ="contenedor_img">
@@ -85,7 +115,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <footer class="pieWeb">
         <div class="pie-izquierda">
@@ -102,11 +132,11 @@
             <!-- <p class = "pie-nombre"> Copyright 2021 <strong>ReyesTraveling Developer</strong>
             All rights reserved</p> -->
             <div class ="pie-icons">
-                <a href="https://www.facebook.com/UniComplutense" target="_blank"><img src="Imagenes/facebook.png" 
-                    alt="de la aplicacion facebook de la universidad complutense de madrid""></a>  <!--  target="_blank" para abrir una nueva ventana -->
-                <a href=" https://twitter.com/unicomplutense" target="_blank"><img src="Imagenes/twitter.png"
+                <a href="https://www.facebook.com/UniComplutense" target="_blank"><img src='Imagenes/facebook.png' 
+                    alt="de la aplicacion facebook de la universidad complutense de madrid"></a>  <!--  target="_blank" para abrir una nueva ventana -->
+                <a href=" https://twitter.com/unicomplutense" target="_blank"><img src='Imagenes/twitter.png'
                     alt="logo de la aplicacion twitter de la universidad complutense de madrid"></a>
-                <a href="https://www.instagram.com/uni.complutense/" target="_blank"><img src="Imagenes/instagram.png"
+                <a href="https://www.instagram.com/uni.complutense/" target="_blank"><img src='Imagenes/instagram.png'
                     alt="logo de la aplicacion instagram de la universidad complutense de madrid"></a>
             </div>
         </div>
@@ -135,6 +165,31 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.prototype.slice.call(forms)
+.forEach(function (form) {
+form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+    event.preventDefault()
+    event.stopPropagation()
+    }
+
+form.classList.add('was-validated')
+    }, false)
+})
+})()
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

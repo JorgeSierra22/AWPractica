@@ -1,68 +1,12 @@
 body{
     background-size: 100%;
     font-family: sans-serif;
-    position: absolute;
 }
 header{
-    width:90%; /* Tamaño de el header */
-    margin: 0px auto;  /* Margen auto para colocarlo en el centro */
-    background-color: #3D6981; /* Fondo del header */
+   width: 100%;
+   margin: 0px auto;
 }
 
-.nav-bar{
-    width: 80%;  /* Tamaño de ancho del contenedor */
-    display: flex; /* Que se muestren en fila */
-    justify-content: space-between; /* Para una distribucion uniforme */
-    align-items: center;    /* Elementos centrados */
-    list-style: none; /* Quitar estilo de lista */
-    position: relative; /* Posicion relativa del contenedor */
-    padding: 12px 20px; /* Margen de el contenido con el contenedor */
-    margin: 0px auto; /* Margen del contendor */
-}
-
-.menu {display: flex;}  /* Contenido del menu sea con distribucion uniforme */
-.menu  li {padding-left: 30px;} /* Dejar un margen izquiedo 30px */
-.menu  li a{
-    display: inline-block; /* Elementos en bloque pero en linea */
-    text-decoration: none; /* Quitar subrayado */
-    color: #fff; /* Color de los enlaces */
-    text-align: center; /* Centrar los enlaces */
-    position: relative; 
-    text-transform: uppercase; /* Texto en mayuscula */
-}
-
-.menu  li a::after{/* Generar una linea debajo de los componentes del menu */
-    content: " ";
-    position: absolute; /* Posicion justo debajo de los componentes del menu */
-    bottom: 0; /* Margenes */
-    left: 0;
-    width: 0;   /* Tamaño 0 hasta que se pase por encima */
-    height: 1px;   /* Anchura de la linea */
-    background:#fff; /* Color de la linea */
-    transition: 0.15s ease-in-out; /* Que la transicion cuando se vea se realice en 0.15 seg */
-}
-.menu  li a:hover::after{width: 100%;} 
-
-.open-menu , .close-menu {
-    position: absolute; /* Posicion con respecto a nav_bar */
-    color: #fff;   /* Color de los botones */
-    cursor: pointer; /* Mostrar mano para saber que se puede clickar */
-    font-size: 1.5rem;  /* Tamaño 1.5 veces el tamaño de fuente */
-    display: none; /* No mostrar al inicio */
-}
-
-.open-menu{
-    top: 50%;     /* Margenes del boton */
-    right: 20px;
-    transform: translateY(-50%);  /* Colocarlo en el centro */
-}
-
-.close-menu{
-    top: 20px; /* Margenes del boton  */
-    right: 20px;
-}
-
-#check{display: none;} /* Que este oculto hasta que consideremos el boton de menu */
 
 /* Logo */
 .logo{
@@ -93,8 +37,8 @@ header{
     align-items: center;
     background: #3D6981; /* Color Fondo de contendor */
     padding: 10px 100px; /* Margen de texto con contenedor */
-    height: 40px ;
-    border-radius: 40px;/* Redondear el borde */
+    height: 60px ;
+    border-radius: 60px;/* Redondear el borde */
 }
 
 .buscar_texto{
@@ -108,11 +52,11 @@ header{
 
 .boton_buscar{
     border:none;
-    background:white;  /* Color Fondo de contendor */
-    color:#3D6981; /* Color texto del contenedor */
+    /*background:white;   Color Fondo de contendor */
+    color:white; /* Color texto del contenedor */
     font-size: 30px; /* Tamaño de la fuente */
     padding: 5px;/* Margen de texto con contenedor */
-    border-radius: 40px;/* Redondear el borde */
+    border-radius: 60px;/* Redondear el borde */
 }
 
 /*Panel de viajes */
@@ -187,7 +131,6 @@ header{
 .pieWeb{
     background-color:rgb(61, 105, 129);
     box-sizing: border-box;
-    widows: 100%;
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
@@ -303,9 +246,9 @@ header{
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color:grey;
+   /*  background-color:grey;  */
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 10px;
     color: #fff;
     text-align: center;
     line-height: 35px;
@@ -316,9 +259,9 @@ header{
     width: 100%;
     height: 100%;
 }
-.pieWeb .pie-icons a:hover{
+/* .pieWeb .pie-icons a:hover{
     background-color: cadetblue;
-}
+} */
 
 .pieWeb .pie-links a:hover{
     color: cadetblue;
@@ -333,27 +276,6 @@ header{
     .contenedor_img .imagen{
         width: 48%;
     }
-}
-
-@media screen and (max-width:950px){
-    .menu {
-        flex-direction: column; /* En columnas los elemntos del menu */
-        align-items: center; /* Centrar el menu */
-        justify-content: center;
-        width: 100%; /* Toada la pantalla */
-        height: 100%;
-        position: fixed; /* Fijar el contenedor */
-        top: 0;
-        right: -100%; /* Para esconder el menu */
-        z-index: 100; 
-        background-color: #3D6981;
-        transition: all 0.2s ease-in-out; /* Mostrarlo con transicion */
-    }
-    .menu  li {margin-top: 40px;}  /* Margenes */
-    .menu  li a{ padding: 10px;}
-    .open-menu, .close-menu { display: block;}  /* Mostrar el boton menu */
-    #check:checked ~ .menu  {right: 0;}  /* Para que aparezca el menu */
-    .logo{ margin: 0px auto;} /* Centrar logo */
 }
 
 @media(max-width: 880px){

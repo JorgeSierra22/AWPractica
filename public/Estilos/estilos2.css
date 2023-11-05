@@ -10,19 +10,19 @@ header{
      background-color: rgb(6, 90, 81); 
 } */
 
-.slide img{
+.d-block{
     height: 65vh;
     object-fit: cover; 
 }
 @media screen and (max-width: 575px){
-    .slide img{
+    .d-block{
         height: 40vh;
         object-fit: cover; 
     }
 }
 
 @media screen and (max-width: 300px){
-    .slide img{
+    .cd-block{
         height: 20vh;
         object-fit: cover; 
     }
